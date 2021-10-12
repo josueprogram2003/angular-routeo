@@ -1,0 +1,4 @@
+<app-login (estado)="actualizarEstado($event)" *ngIf="estado"></app-login>
+
+<app-vista1 *ngIf="estado == false"></app-vista1>
+<router-outlet></router-outlet>

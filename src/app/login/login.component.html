@@ -1,0 +1,30 @@
+<div class="w-50 m-auto">
+  <form class="container">
+    <h1>Login</h1>
+    <div class="mb-3">
+      <input
+        name="user"
+        type="text"
+        class="form-control"
+        id="exampleFormControlInput1"
+        placeholder=" Usuario"
+        [(ngModel)]="user"
+      />
+    </div>
+    <div class="mb-3">
+      <input
+        name="pass"
+        type="password"
+        class="form-control"
+        id="exampleFormControlInput1"
+        placeholder=" Contraseña"
+        [(ngModel)]="pass"
+      />
+    </div>
+    <div class="mb-3">
+      <button class="btn btn-primary" (click)="cambiarEstado(false)">
+        Ingresar
+      </button>
+    </div>
+  </form>
+</div>
